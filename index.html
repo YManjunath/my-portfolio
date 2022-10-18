@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Manju-Portfolio</title>
+    <script src="https://kit.fontawesome.com/af829b22ea.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <!-- <img src="assets/logo.png" class="logo" alt="logo" /> -->
+          <h1><span>Y</span>.Manjunath</h1>
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#my-work">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>
+            Hi, I am <span> Manjunath </span><br />
+            From Bangalore
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/my-pic.JPG" alt="" srcset="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I live and work near Bangalore, India. At my day job, I develop
+              websites using frameworks like Angular, ReactJs. I also freelance
+              when I can, mostly building custom websites and apps that you
+              can’t get from a template. I have 2 years of experience in Web
+              Development, While my focus is mobile-first responsive websites
+              with HTML, JavaScript, CSS. I handle most backend stuff with
+              MongoDB, very familiar with NoSQL firebase, Angular with Firebase,
+              very much interested in RESTful api's
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Web App Development</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Oct 2022 - Current</span><br />System Engineer</li>
+                <li><span>Jan 2022 - Sep 2022</span><br />Software Engineer</li>
+                <li><span>Feb 2021 - Jan 2022</span><br />Software Engineer</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2018</span><br />Electrical and Electronics Engineer
+                  From AIT Bangalore
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div> 
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+              nemo! Dolorum inventore dicta doloribus repellendus ad amet ut
+              architecto dolores.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+              nemo! Dolorum inventore dicta doloribus repellendus ad amet ut
+              architecto dolores.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus,
+              nemo! Dolorum inventore dicta doloribus repellendus ad amet ut
+              architecto dolores.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="my-work">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="assets/work1.png">
+            <div class="layer">
+              <h3>E-Commerce App</h3>
+              <p>A simple E-commerce application, let's user to buy CD's of their choice. This application developed using Angular latest vesrion.</p>
+              <a href="https://cd-store-ag8hvjga6-ymanjunath.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/work-2.png">
+            <div class="layer">
+              <h3>E-Commerce App</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, nobis.</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/work-3.png">
+            <div class="layer">
+              <h3>E-Commerce App</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, corrupti?</p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>  
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>manjuyatnatti12@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>8147708345</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/manjunath.yatnatti.1/" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/YManjunath6" target="_blank"><i class="fab fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/manjunath___y/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/y-manjunath-2a0755166/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="assets/CVManju.pdf" download class="btn btn1">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn1">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <p>Copyright@ Y Manjunath</p>
+      </div>
+    </div>
+
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabnames) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabnames).classList.add("active-tab");
+      }
+
+      var sidemenu = document.getElementById('sideMenu');
+
+      function openMenu(){
+        sidemenu.style.right = "0"
+      }
+
+      function closeMenu(){
+        sidemenu.style.right = "-200px"
+      }
+
+
+    </script>
+  </body>
+</html>
